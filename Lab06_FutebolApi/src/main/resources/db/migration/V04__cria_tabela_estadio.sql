@@ -1,0 +1,7 @@
+CREATE TABLE Estadio (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  nome VARCHAR(60) NOT NULL,
+  endereco VARCHAR(100) NOT NULL,
+  time_id INT,
+  FOREIGN KEY (time_id) REFERENCES Time(id)
+);
